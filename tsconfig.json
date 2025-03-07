@@ -5,6 +5,7 @@
     "require": ["tsconfig-paths/register"]
   },
   "compilerOptions": {
+    "lib": ["es2023", "DOM", "DOM.Iterable"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
