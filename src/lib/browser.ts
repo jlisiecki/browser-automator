@@ -8,8 +8,8 @@ const commands = {
     macos: "killall 'Google Chrome'",
   },
   start: {
-    windows: `start chrome --remote-debugging-port=${env.CHROME_DEBUG_PORT} --profile-directory="${env.CHROME_PROFILE}"`,
-    macos: `open -na "Google Chrome" --args --remote-debugging-port=${env.CHROME_DEBUG_PORT} --profile-directory="${env.CHROME_PROFILE}"`,
+    windows: `start chrome --remote-debugging-port=${env.CHROME_DEBUG_PORT} --user-data-dir="${env.CHROME_PROFILE}"`,
+    macos: `open -na "Google Chrome" --args --remote-debugging-port=${env.CHROME_DEBUG_PORT} --user-data-dir="${env.CHROME_PROFILE}"`,
   },
 };
 

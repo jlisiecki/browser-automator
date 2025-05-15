@@ -23,8 +23,10 @@ npm run start
 
 ## Plik .env
 
-W pliku `.env` mamy możliwość ustawienia portu komunikacyjnego z przeglądarką (raczej mało przydatne, może zostać domyślny) oraz profilu przeglądarki - aby ustalić nazwę prodilu należy w Chrome wejść pod adres:
+W pliku `.env` mamy możliwość ustawienia portu komunikacyjnego z przeglądarką (raczej mało przydatne, może zostać domyślny) oraz profilu przeglądarki. W nowszych wersjach Chrome należy utworzyć specjalny profil do korzystania z protokołu CDP, dlatego powinniśmy podać ścieżkę do folderu np. w Dokumentach - gdzie zostanie utworzony nowy profil np.:
 
-`chrome://version/`
+```
+CHROME_PROFILE="C:\Users\YourUsername\Documents\ChromeCDPProfile"
+```
 
-Nazwa profilu to ostatni folder ścieżki `Ścieżka profilu:` - zazwyczaj `Default` lub `Profile 1`, `Profile 2` itd.
+Do nowego profilu można się normalnie zalogować do konta Google i innych kont, będzie on przechowywać dane tak jak zwykłe profile do tej pory.
